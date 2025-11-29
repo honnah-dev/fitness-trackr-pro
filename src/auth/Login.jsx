@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from "./AuthContext";
 // import { usePage } from "../layout/PageContext";
 
@@ -18,7 +18,7 @@ export default function Login() {
     const password = formData.get("password");
     try {
       await login({ username, password });
-      navigate("/activities")
+      navigate("/")
       // setPage("activities");
     } catch (e) {
       setError(e.message);

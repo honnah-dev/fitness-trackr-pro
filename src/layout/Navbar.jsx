@@ -1,6 +1,6 @@
 import { useAuth } from "../auth/AuthContext";
 // import { usePage } from "./PageContext";
-import { NavLink } from "react-router";
+import { NavLink } from "react-router-dom";
 
 
 /** Navbar with site navigation links */
